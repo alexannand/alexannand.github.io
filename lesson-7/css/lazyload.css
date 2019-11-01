@@ -1,0 +1,41 @@
+.design {
+    display: grid; 
+    grid-auto-columns: 400px;
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    font-weight: italic;
+    font-family: 'Staatliches', cursive;
+}
+
+p {
+    margin-top: -6px;
+    font-weight: italic;
+    font-family: 'Staatliches', cursive;
+    font-size: 2em;
+    border-style: solid;
+    border-color: black;
+}
+
+img {
+  margin: 6px auto;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.3s;
+}
+
+img[data-src] {
+    filter: blur(0.6em);
+}
