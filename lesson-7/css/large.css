@@ -1,0 +1,52 @@
+/* Media Query for medium + screens */
+
+/*Hamburgur button configuration*/
+
+@media only screen and (min-width: 70em) {
+	
+.navbar {
+    display: flex;
+}
+    
+.navbar li:first-child {
+    display: none;
+}
+    
+.navbar li {
+    display: block;
+    flex: 6 6 1%;
+}
+    
+.navbar li a {
+    color: white;
+    font-size: 18px;
+}
+    
+.logo {
+    width: 150px;
+    height: 100%;
+}  
+    
+.header-name{
+    font-size: 35px;
+}
+    
+.header-motto {
+    font-size: 20px;
+}
+    
+footer{
+    font-size: 18px;
+}   
+    
+.table {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.gallery-title {
+    font-size:24px;
+}
+
+}

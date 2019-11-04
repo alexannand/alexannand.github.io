@@ -1,0 +1,18 @@
+@media only screen and (min-width: 35em) {
+
+.logo {
+    width: 150px;
+    height: 100%;
+}    
+
+footer {
+    font-size: 15px;
+}
+
+.table {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:30px;
+    margin:0 0 30px 0 ;
+} 
+    
+} 
