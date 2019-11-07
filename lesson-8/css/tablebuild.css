@@ -1,0 +1,61 @@
+.gray {
+    background-color: #e7f0ed;
+}
+
+#goal {
+    background-color: #628ca6;
+    color:white;
+}
+
+body {
+    background-color: aliceblue;
+    display: grid; 
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-weight: italic;
+    font-family: 'Staatliches', cursive;
+}
+
+table {
+    font-family: 'Ubuntu', sans-serif;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 20px #628ca6;
+}
+
+caption, td, th {
+    padding: 0.5em;
+    border: 1px solid grey;
+}
+
+caption, tfoot {
+    background-color: #7fb9c2;
+}
+
+caption {
+    font-weight: 900;
+    font-size: 25px;
+    box-shadow: 10px 10px 20px #628ca6;
+}
+
+th {
+    color: white;
+    background-color: #628ca6;
+    letter-spacing: 1px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody:nth-of-type(even) {
+    background-color: #e7ffed;
+}
+
+tfoot {
+    font-size: 12px;
+    margin: 0 auto;
+}
+
