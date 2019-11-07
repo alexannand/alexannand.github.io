@@ -10,12 +10,13 @@
 body {
     background-color: aliceblue;
     display: grid; 
+    grid-auto-columns: 400px;
     justify-content: center;
     text-align: center;
 }
 
 h1 {
-    font-weight: italic;
+    font-style: italic;
     font-family: 'Staatliches', cursive;
 }
 
@@ -32,12 +33,13 @@ caption, td, th {
 
 caption, tfoot {
     background-color: #7fb9c2;
+    box-shadow: 10px 10px 20px #628ca6;
 }
 
 caption {
-    font-weight: 900;
+    caption-side: top;
+    font-weight: bold;
     font-size: 25px;
-    box-shadow: 10px 10px 20px #628ca6;
 }
 
 th {
