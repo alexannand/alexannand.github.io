@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/small.css">
+    
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <title>The Storm Center</title>
+    <meta name="description" content="Report a storm near you">
+</head>
+    
+<body>
+
+<header>
+        <img class="logo" src="images/logo.png" alt="logo">
+<div id="header">
+     <h1 id="company-name">Snapshot Weather</h1>
+     <div id="company-motto">Your Weather Snapshot All Year Round</div>
+</div>
+     
+</header> 
+    
+<nav>
+        <ul id="dropdown" class="navbar">
+            <li><a href="#" onclick="menuDropdown()">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
+        </ul>  
+</nav>
+    
+<main>
+ 
+    <h1 id="reportstorm">Report A Storm</h1>
+    <form action="thanks.html" method="get">
+        
+    <section id="personalinfo">
+    <h2>Personal Information</h2>
+    <label class="required">Full Name *<br><input type="text" name="full name" pattern="[A-Za-z]{5,}" autocomplete="off" required></label><br><hr>
+    <label>E-Mail<br><input type="email" name="email" placeholder=" email@email.com" autocomplete="off"></label><br><hr>
+    <label class="required">Phone Number *<br><input type="tel" name="telephone" autocomplete="off" pattern="[0-9]+" required></label><br><hr>
+    <label class="required">Zip Code *<br><input type="number" name="zipcode" autocomplete="off" required></label><br><hr>
+    <span class="required">* Required Field</span>
+    </section>
+        
+    <br>
+    <section id="storminfo">
+    <h2>Storm Information</h2>
+    <label>Storm Date<br><input type="date" name="date" autocomplete="off" ></label><br><hr>
+    <label>Storm Type<br><input list="storm">
+    <datalist id="storm">
+      <option value="Flash">
+      <option value="Flood">
+      <option value="Hail">
+      <option value="Hurricane">
+      <option value="Thunderstorm">
+      <option value="Tornado">
+    </datalist></label><br><hr>
+    <label>Storm Severity<br>0
+    <input type="range" name="storm-severity" min="0" max="10" ></label>10<br><hr>
+    <label>Storm Region<br>
+    <select name="region">
+        <option value="" disabled selected>Select Region</option>
+        <option value="Preston">Preston</option>
+        <option value="Soda Springs">Soda Springs</option>
+        <option value="Fish Haven">Fish Haven</option>
+    </select></label><br><hr>
+    <label class="danger" >Are you in danger?</label><br>
+        <input type="radio" name="level-of-danger" value="yes"> Yes<br>
+        <input type="radio" name="level-of-danger" value="maybe"> Maybe<br>
+        <input type="radio" name="level-of-danger" value="No"> No
+    </section>
+        
+    <br>
+    <section id="additionalinfo">
+    <h2>Additional Information</h2>
+    <label>Comments<hr><textarea rows="6" cols="70" placeholder="Add additional information here..."></textarea></label><br>
+    </section>
+    <br><input type="submit" value="Submit Report" class="submitbutton"><br><br>
+    </form>
+
+</main>
+    
+<footer>
+        <p>&copy;2019 &#9899; Alexander J. Annand &#9899; Arizona - USA &#9899; <a class="footer-byui" href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+</footer>
+    
+</body>
+
+</html>

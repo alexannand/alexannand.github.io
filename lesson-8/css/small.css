@@ -1,0 +1,151 @@
+body {
+    background-color:aliceblue;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: darkblue;	
+}
+
+.navbar {
+    display: flex;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.navbar li {
+	border: 1px solid white;
+    display: block;
+    flex: 6 6 1%;
+}
+
+.navbar a {
+	display: block;
+	color: white;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: black;
+	background-color: azure;
+}
+
+header {
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    background-color: azure;
+    border: solid thick darkslateblue;
+}
+
+.logo {
+    width: 150px;
+    height: 100%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+}
+
+#company-motto {
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    color: darkgray;
+    margin-left: 20px;
+    padding-right: 5px;
+}
+
+#company-name {
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: darkslateblue;  
+}
+
+main {
+    font-family: 'Staatliches', cursive;
+}
+
+#reportstorm {
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: darkslateblue;
+}
+
+#personalinfo {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border: solid thick darkslateblue;
+}
+
+.required {
+    color: darkred;
+}
+
+#storminfo {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border: solid thick darkslateblue;
+}
+
+#additionalinfo {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border: solid thick darkslateblue;
+}
+
+.submitbutton {
+    background-color: lightgray;
+    border: solid 2px darkslateblue;
+    padding: 1em;
+    margin-bottom: 1.5%;
+    width: 200px;
+}
+
+.submitbutton:hover {
+    background-color:darkgray;
+}
+
+.thankyou {
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+    background-color: lightgray;
+    border: solid thick darkslateblue;
+}
+
+footer{
+    background-color:darkblue;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.footer-byui {
+    color:white;
+}
