@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(9, 9, 33);
+}
+
+main {
+    max-width: 400px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 25px auto;
+    padding: 15px 0;
+}
+
+section {
+    background-color: rgb(60, 60, 100);
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(170, 170, 200);
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: lightsteelblue;
+}
+
+p {
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: lightyellow;
+}
+
+img {  
+    margin: 10px 20px 20px;
+    width: 325px;
+    height: 450px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 0px 0px 20px rgb(200, 200, 230);
+}
+
+.cards {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;  
+    margin: auto; 
+    grid-gap:15px;
+}
+
+footer {
+    background-color:darkblue;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 15px;
+    flex-direction: column;
+    text-align: center; 
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+.footer-byui {
+    color:white;
+}
+
+@media only screen and (min-width: 32.5em) {
+  main {
+    max-width: 700px;
+  }
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  main {
+    max-width: 1000px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+  }
+}
