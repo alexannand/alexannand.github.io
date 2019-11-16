@@ -1,0 +1,29 @@
+@media only screen and (min-width:32.5em){
+
+main {
+    grid-template-columns: 1fr 1fr;
+    margin-right:0;
+    margin-left:0;
+    max-width: 90%;
+}
+
+header, footer {
+    margin:1.25em 0.5em;
+    border-radius:10px;
+}
+    
+h1 {
+    display:grid;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    color: darkslateblue;
+}
+
+h2 {
+    font-size: 2em;
+    color: darkslateblue;
+}
+
+figure:nth-child(3) {
+    grid-column: span 1;
+}

@@ -17,8 +17,8 @@ fetch(requestURL)
         let image = document.createElement("img");
         let gap = document.createElement("br");
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;       
-        birthDate.textContent = "Date of birth: " + prophets[i].birthdate;
-        birthPlace.textContent = "Place of birth: " + prophets[i].birthplace;                
+        birthDate.textContent = "Date of Birth: " + prophets[i].birthdate;
+        birthPlace.textContent = "Place of Birth: " + prophets[i].birthplace;                
         image.setAttribute('src', prophets[i].imageurl);
         image.setAttribute ("alt", alt);
         card.appendChild(h2);

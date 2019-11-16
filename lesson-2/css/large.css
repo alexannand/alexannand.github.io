@@ -1,0 +1,21 @@
+@media only screen and (min-width:60em){
+    
+main {
+    grid-template-columns: repeat(3,1fr);
+}
+    
+h1, h2 {
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    color: darkslateblue;
+}
+    
+figure:nth-child(3) {
+    grid-column: span 1;
+}
+    
+img {
+    height:600px;
+}
+
+}
