@@ -1,0 +1,200 @@
+body {
+    background-color: #d4d4de;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #090921;	
+}
+
+.navbar {
+    display: flex;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.navbar li {
+	border: 1px solid #616165;
+    display: block;
+    flex: 6 6 1%;
+}
+
+.navbar a {
+	display: block;
+	color: #d4d4de;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: black;
+	background-color: #616165;
+}
+
+header {
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    background-color: #090921;
+    border: solid thick #616165;
+}
+
+.logo {
+    width: 150px;
+    height: 100%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+}
+
+#company-motto {
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    color: #d4d4de;
+    margin-left: 20px;
+    padding-right: 5px;
+}
+
+#company-name {
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: #d4d4de;  
+}
+
+main {
+    max-width: 400px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 25px auto;
+    padding: 15px 0;
+}
+
+section {
+    background-color: #090921;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    color: #d4d4de;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 17px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #090921;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(170, 170, 200);
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 30px;
+    text-align: center;
+    color: #d4d4de;
+    text-shadow: 0px 0px 20px white;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.homepage {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;  
+    margin: auto; 
+    grid-gap:15px;
+    padding-bottom: 30px;
+}
+
+.homepage img {  
+    margin: 10px 20px 20px;
+    width: 325px;
+    height: 450px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 0px 0px 20px #d4d4de;
+}
+
+.homepage img {
+    filter: blur(0em);
+    transition: filter 0.3s;
+}
+
+.homepage img[data-src] {
+    filter: blur(0.6em);
+}
+
+/* Contact Details and Footer for all pages */
+
+.contact {
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.contact-info {
+    padding: 15px;
+}
+
+.preston-contact {
+    width: 330px;
+    height: 330px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+#contact-us {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.social-media {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #090921;
+    border: solid thick #616165;
+    padding: 20px;
+}
+
+.footer-byui {
+    color:white;
+}
