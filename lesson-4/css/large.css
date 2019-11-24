@@ -1,0 +1,21 @@
+@media only screen and (min-width:70em) {
+
+    main {
+        max-width: 1500px;
+        padding-left: 20px;
+    }
+    
+    .navbar {
+        display: flex;
+    }  
+    
+    .navbar li {
+        display: block;
+        flex: 6 6 1%;
+    }
+    
+    .navbar li:first-child {
+        display: none;
+    }
+    
+}

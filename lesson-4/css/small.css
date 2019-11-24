@@ -1,0 +1,186 @@
+/* Header, Nav, and general CSS for all pages */
+
+body {
+    background-color: #d4d4de;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #090921;	
+}
+
+.navbar {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.navbar li {
+	border: 1px solid #7d7d81;
+    display: none;
+    flex: 6 6 1%;
+}
+
+.navbar li:first-child {
+    display: block;
+}
+
+.navbar a {
+	display: block;
+	color: #d4d4de;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: black;
+	background-color: #7d7d81;
+}
+
+.dropdown li {
+    display: block;
+}
+
+header {
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    background-color: #090921;
+    border: solid thick #616165;
+}
+
+.logo {
+    width: 150px;
+    height: 100%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+}
+
+#company-motto {
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    color: #d4d4de;
+    margin-left: 20px;
+    padding-right: 5px;
+}
+
+#company-name {
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: #d4d4de;  
+}
+
+main {
+    max-width: 400px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 25px auto;
+    padding: 15px 0;
+}
+
+section {
+    background-color: #090921;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    color: #d4d4de;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 17px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #090921;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(170, 170, 200);
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 0px 20px #090921;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Assignment CSS */
+
+
+
+/* Contact Details and Footer for all pages */
+
+.contact {
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-style: solid;
+    border-color: #7d7d81;
+    border-radius: 10px;
+}
+
+.contact-info {
+    padding: 15px;
+}
+
+.preston-contact {
+    width: 330px;
+    height: 330px;
+    border-style: solid;
+    border-color: #7d7d81;
+    border-width: 1px;
+}
+
+#contact-us {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.social-media {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #090921;
+    border: solid thick #616165;
+    padding: 20px;
+}
+
+.footer-byui {
+    color:white;
+}

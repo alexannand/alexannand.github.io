@@ -10,10 +10,12 @@
     <link rel="shortcut icon" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    <title>Home - Site Plan</title>
-    <meta name="description" content="The home page for the site plan">
+    <script src="../lesson-4/js/menu.js"></script>
+    <script src="../lesson-4/js/date.js"></script>
+    <title>Preston Weather Page</title>
+    <meta name="description" content="Content for the city Preston">
 </head>
-<body>
+<body onload="UpdateDates()">
   
 <header>
         <img class="logo" src="images/logo.png" alt="logo">
@@ -25,7 +27,8 @@
 </header> 
     
 <nav>
-        <ul id="dropdown" class="navbar">
+        <ul class="navbar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="../lesson-9/index.html">Home</a></li>
             <li><a href="../lesson-4/preston-4.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -33,12 +36,16 @@
             <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
             <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
         </ul>  
-</nav>    
+</nav>  
     
 <main>
-    <div class="homepage">
-    </div> 
 
+    <h2>Preston, Idaho</h2>
+    <br>
+    <hr>
+    
+    <h3>Article</h3>
+    
 <div class="contact">
     <img class="preston-contact" src="images/prestoncontact.png" alt="Map of Preston, Idaho">
     <div class="contact-info">
@@ -57,10 +64,9 @@
 </main>
 
 <footer>
-        <span>&copy;2019 &#9899; Alexander J. Annand &#9899; Arizona - USA &#9899; <a class="footer-byui" href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></span>
+    <p>&copy; <span id="copyrightdate"></span> &#9899; Alexander J. Annand &#9899; Arizona - USA &#9899; <a class="footer-byui" href="http://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
+    <span id="date"></span></p>  
 </footer>
-
-<script src="js/homepage.js" defer></script>
     
 </body>
 
