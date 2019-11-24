@@ -1,0 +1,73 @@
+@media only screen and (min-width:70em) {
+
+    main {
+        max-width: 1500px;
+        padding-left: 20px;
+    }
+    
+    .navbar {
+        display: flex;
+    }  
+    
+    .navbar li {
+        display: block;
+        flex: 6 6 1%;
+    }
+    
+    .navbar li:first-child {
+        display: none;
+    }
+    
+    nav ul li:focus a {
+        background-color: #d4d4de;
+    }
+    
+    .forecast {
+        display:inline;
+        margin:auto;
+        justify-items: center;
+    }
+    
+    table {
+        align-content: center;
+        font-family: 'Poppins', sans-serif; 
+        border-collapse: collapse;
+        box-shadow: 15px 15px 25px #090921;
+        table-layout: fixed;
+        width: 750px;
+        border-left: 2px solid #7d7d81;
+        border-bottom: 2px solid #7d7d81;
+        border-right: 2px solid #7d7d81;
+    }
+    
+    thead {
+        text-shadow: 0px 0px 20px white;
+        background-color: #090921;
+        color: #d4d4de;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    caption, td, th {
+        padding: 0.5em;
+        
+    }  
+    
+    td {
+        border-left: 2px solid #7d7d81;
+        border-right: 2px solid #7d7d81;
+    }
+    
+    #days {
+        font-weight: bold;
+        border: 2px solid #7d7d81;
+        width: 20%;
+        background-color: #d4d4de;
+    }
+    
+    .sunny {
+        background-color: white;
+        font-weight: bold;
+    }
+    
+}
