@@ -1,0 +1,74 @@
+@media only screen and (min-width:35em) {
+
+    main {
+        max-width: 1000px;
+    }
+    
+    .homepage {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .homepage section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 500px;
+    }
+    
+    .homepage img {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    } 
+    
+    .forecast {
+        display:inline;
+        margin:auto;
+        justify-items: center;
+    }
+    
+    table {
+        align-content: center;
+        font-family: 'Poppins', sans-serif; 
+        border-collapse: collapse;
+        box-shadow: 15px 15px 25px #090921;
+        table-layout: fixed;
+        width: 750px;
+        border-left: 2px solid #7d7d81;
+        border-bottom: 2px solid #7d7d81;
+        border-right: 2px solid #7d7d81;
+    }
+    
+    thead {
+        text-shadow: 0px 0px 20px white;
+        background-color: #090921;
+        color: #d4d4de;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    caption, td, th {
+        padding: 0.5em;
+        
+    }  
+    
+    td {
+        border-left: 2px solid #7d7d81;
+        border-right: 2px solid #7d7d81;
+    }
+    
+    #days {
+        font-weight: bold;
+        border: 2px solid #7d7d81;
+        width: 20%;
+        background-color: #d4d4de;
+    }
+    
+    .sunny {
+        background-color: white;
+        font-weight: bold;
+    }
+   
+}
