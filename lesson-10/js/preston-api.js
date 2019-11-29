@@ -1,4 +1,4 @@
-const prestonAPIcurrent = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=abdae41d051b90c3354abd81c4cdf5b5&units=imperial';
+const prestonAPIcurrent = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=ae38941d4350013112e23f5bf30fe969&units=imperial';
 
 fetch(prestonAPIcurrent)
   .then((response) => response.json())
@@ -23,7 +23,7 @@ fetch(prestonAPIcurrent)
   
 
 
-const prestonAPIforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=f69138eabaf7b974bb7452d338551399&units=imperial";
+const prestonAPIforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=ae38941d4350013112e23f5bf30fe969&units=imperial";
 fetch(prestonAPIforecast)
   .then((response) => response.json())
   .then((prestonForecastObject) => {
