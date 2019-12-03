@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="../lesson-11/js/general.js"></script>
     <script src="../lesson-11/js/menu.js"></script>
     <script src="../lesson-11/js/date.js"></script>
     <script src="../lesson-11/js/lazyload.js" defer></script>
@@ -27,21 +28,21 @@
 </div>
      
 </header> 
-    
+   
 <nav>
         <ul class="navbar">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="../lesson-11/index.html">Home</a></li>
             <li class="currentpage"><a href="../lesson-11/preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson-11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="../lesson-11/fishhaven.html">Fish Haven</a></li>
             <li><a href="../lesson-11/stormcenter.html">Storm Center</a></li>
             <li><a href="../lesson-11/gallery.html">Gallery</a></li>
         </ul>  
 </nav>  
     
 <main>
-
+<section> 
     <h2>Preston, Idaho</h2>
     
     <br>
@@ -49,7 +50,7 @@
     <br>
     
     <div class="banner">
-        <img class="banner-image" src="images/banner.jpg" alt="Preston">
+        <img class="banner-image" src="images/prestonbanner.jpg" alt="Preston">
         <div class="summary">
             <h3>Weather Summary</h3>
             <p>Currently: <span id="current"></span></p>
@@ -103,10 +104,16 @@
         <div class="article-writing">
             <h3>Quickly Changing  to Winter</h3>
             <h5>By: Alex Annand</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span id="dots">...</span><br>
+            <span id="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            </p>
+            <button onclick="ReadMore()" id="readMore">Read More</button>
         </div>
     </section>
     
+    <br>
+    <hr>
+    <div class="events"></div>
     <br>
     <hr>
     <br>
@@ -125,7 +132,7 @@
             <a href="http://youtube.com" target="_blank"><img class="social-media" src="images/youtube.png" alt="Youtube icon"></a>
         </div>
     </div>
-    
+</section>
 </main>
 
 <footer>

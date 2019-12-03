@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lesson-11/css/small.css">
+    <link rel="stylesheet" href="../lesson-11/css/medium.css">
+    <link rel="stylesheet" href="../lesson-11/css/large.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="../lesson-11/js/general.js"></script>
+    <script src="../lesson-11/js/menu.js"></script>
+    <script src="../lesson-11/js/date.js"></script>
+    <script src="../lesson-11/js/lazyload.js" defer></script>
+    <script src="../lesson-11/js/fishhaven-api.js"></script>
+    <title>Snapshot Weather - Fish Haven</title>
+    <meta name="description" content="Content for the city Fish Haven">
+</head>
+<body onload="UpdateDates()">
+  
+<header>
+        <img class="logo" src="images/logo.png" alt="logo">
+<div id="header">
+     <h1 id="company-name">Snapshot Weather</h1>
+     <div id="company-motto">Your Weather Snapshot All Year Round</div>
+</div>
+     
+</header> 
+   
+<nav>
+        <ul class="navbar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../lesson-11/index.html">Home</a></li>
+            <li><a href="../lesson-11/preston.html">Preston</a></li>
+            <li><a href="../lesson-11/sodasprings.html">Soda Springs</a></li>
+            <li class="currentpage"><a href="../lesson-11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../lesson-11/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson-11/gallery.html">Gallery</a></li>
+        </ul>  
+</nav>  
+    
+<main>
+<section> 
+    <h2>Fish Haven, Idaho</h2>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <div class="banner">
+        <img class="banner-image" src="images/fishhavenbanner.jpg" alt="Preston">
+        <div class="summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="current"></span></p>
+            <p>High: <span id="high"></span> &deg;F</p>
+            <p>Wind Speed: <span id="speed"></span></p>
+            <p>Wind Chill: <span id="chill"></span> mph</p>
+            <p>Humidity: <span id="humidity"></span></p>
+        </div>
+    </div>
+    <br>
+    <section class="forecast">
+    <table align="center">
+        <thead>
+        <tr>
+            <th colspan="5">5 Day Forecast</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr id="days">
+                <td id="day-1"></td>
+                <td id="day-2"></td>
+                <td id="day-3"></td>
+                <td id="day-4"></td>
+                <td id="day-5"></td>
+            </tr>
+            <tr class="sunny">
+                <td><img id="icon-1" src="#" alt="#" width="100px" height="100px"></td>
+                <td><img id="icon-2" src="#" alt="#" width="100px" height="100px"></td>
+                <td><img id="icon-3" src="#" alt="#" width="100px" height="100px"></td>
+                <td><img id="icon-4" src="#" alt="#" width="100px" height="100px"></td>
+                <td><img id="icon-5" src="#" alt="#" width="100px" height="100px"></td>
+            </tr>
+            <tr class="sunny">
+                <td id="temp-1"></td>
+                <td id="temp-2"></td>
+                <td id="temp-3"></td>
+                <td id="temp-4"></td>
+                <td id="temp-5"></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    
+    <br>
+    <hr>
+    
+    <section class="article-section">
+    <div class="article">
+        <img class="article-image" src="images/fishing.jpg" alt="Beginning of winter">
+    </div> 
+        <div class="article-writing">
+            <h3>Winter Fishing At Its Finest</h3>
+            <h5>By: Alex Annand</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span id="dots">...</span><br>
+            <span id="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            </p>
+            <button onclick="ReadMore()" id="readMore">Read More</button>
+        </div>
+    </section>
+    
+    <br>
+    <hr>
+    <div class="events"></div>
+    <br>
+    <hr>
+    <br>
+    
+    <div class="contact">
+        <img class="preston-contact" src="images/prestoncontact.png" alt="Map of Preston, Idaho">
+        <div class="contact-info">
+        <h3 id="contact-us">Contact Us!</h3>
+            <p>1 North 2nd East</p>
+            <p>Preston, ID 83263</p>
+            <p>+1 123-456-7890</p>
+            <p>contact@snapshotweather.com</p>
+            <a href="http://facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="http://instagram.com" target="_blank"><img class="social-media" src="images/instagram.png" alt="Instagram icon"></a>
+            <a href="http://twitter.com" target="_blank"><img class="social-media" src="images/twitter.png" alt="Twitter icon"></a>
+            <a href="http://youtube.com" target="_blank"><img class="social-media" src="images/youtube.png" alt="Youtube icon"></a>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <p>&copy; <span id="copyrightdate"></span> &#9899; Alexander J. Annand &#9899; Arizona - USA &#9899; <a class="footer-byui" href="http://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
+    <span id="date"></span><br>
+    <span>API Weather sources credited to <a class="footer-byui" href="https://openweathermap.org/">openweathermap.org</a></span></p>  
+</footer>
+    
+</body>
+
+</html>

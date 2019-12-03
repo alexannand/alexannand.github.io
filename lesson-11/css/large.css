@@ -70,4 +70,35 @@
         font-weight: bold;
     }
     
+    .homepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    
+    .homepage section {
+        display: flex;
+        flex-direction: column;
+        width: 450px; 
+    }
+    
+    .homepage section:nth-child(1) {
+        flex-direction: column;
+    }
+    
+    .homepage section:nth-child(2) {
+        flex-direction: column;
+    }
+    
+    .homepage img {
+        width: 100%;
+        max-width: 400px; 
+        height: 300px;
+    }  
+    
+    .table {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    }
+    
 }

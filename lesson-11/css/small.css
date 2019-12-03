@@ -87,6 +87,11 @@ header {
     margin-bottom: 10px;
     margin-left: 15px;
     color: #d4d4de;  
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(170, 170, 200);
+    font-size: 40px;
 }
 
 main {
@@ -96,14 +101,6 @@ main {
     text-align: center;
     margin: 25px auto;
     padding: 15px 0;
-}
-
-h1 {
-    font-family: 'Staatliches', cursive;
-    letter-spacing: 5px;
-    text-align: center;
-    color: rgb(170, 170, 200);
-    font-size: 20px;
 }
 
 h2 {
@@ -120,7 +117,71 @@ h4 {
     font-style: italic;
 }
 
-/* Assignment CSS */
+/* Home Page */
+
+.homepage {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;  
+    margin: auto; 
+    grid-gap:15px;
+    padding-bottom: 30px;
+}
+
+.homepage section {
+    background-color: #090921;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    color: #d4d4de;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 17px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #090921;
+}
+
+.homepage h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(170, 170, 200);
+    font-size: 20px;
+}
+
+.homepage h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 30px;
+    text-align: center;
+    color: #d4d4de;
+    text-shadow: 0px 0px 20px white;
+}
+
+.homepage h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.homepage img {  
+    margin: 10px 20px 20px;
+    width: 325px;
+    height: 450px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 0px 0px 20px #d4d4de;
+}
+
+.homepage img {
+    filter: blur(0em);
+    transition: filter 0.3s;
+}
+
+.homepage img[data-src] {
+    filter: blur(0.6em);
+}
+
+/* Preston, Soda Springs, and Fish Haven CSS */
 
 .banner {
     position: relative;
@@ -180,7 +241,7 @@ h4 {
 }
 
 .article-image {
-    max-width: 100%;
+    max-width: 50%;
     height: 400px;
     box-shadow: 0px 0px 30px white;
 }
@@ -193,6 +254,161 @@ h4 {
 
 .article-writing h3 {
     text-shadow: 0px 0px 20px white;
+}
+
+#more {
+    display: none;
+}
+
+.events {
+    padding: 1em;
+    display: block;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:#090921;
+    color: #d4d4de;
+    border: 2px solid #7d7d81;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+
+.event-title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #d4d4de;
+    font-size: 30px;
+    text-shadow: 0px 0px 20px white;
+}
+
+.event-p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #d4d4de;
+}
+
+.event-image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: 400px;
+    box-shadow: 0px 0px 30px white;
+}
+
+/* Storm Center and Thank You pages */
+
+#reportstorm {
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;
+    color: #090921;
+    font-size: 50px;
+    text-shadow: 0px 0px 20px #7d7d81;
+}
+
+#personalinfo {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d4de;
+    border: solid thick #7d7d81;
+    font-family: 'Poppins', sans-serif;
+}
+
+.required {
+    color: darkred;
+}
+
+#storminfo {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d4de;
+    border: solid thick #7d7d81;
+    font-family: 'Poppins', sans-serif;
+}
+
+#additionalinfo {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d4de;
+    border: solid thick #7d7d81;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submitbutton {
+    background-color: #d4d4de;
+    border: solid 2px black;
+    padding: 1em;
+    margin-bottom: 1.5%;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submitbutton:hover {
+    background-color: #7d7d81;
+}
+
+.thankyou {
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+    background-color: #d4d4de;
+    border: solid thick #7d7d81;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Gallery page */
+
+#gallery {
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;
+    color: #090921;
+    font-size: 40px;
+    text-shadow: 0px 0px 20px #7d7d81;
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.3s;
+}
+
+img[data-src] {
+    filter: blur(0.6em);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    margin: 30px;
+}
+
+figure {
+    margin:0;
+    box-shadow: 7px 7px 7px 2px #7d7d81;
+}
+
+figcaption {
+    background-color: #090921;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.image:hover {
+    box-shadow: 0 0 75px black;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 350px;
 }
 
 /* Contact Details and Footer for all pages */
