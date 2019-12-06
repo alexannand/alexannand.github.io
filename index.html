@@ -8,9 +8,10 @@
         <title>CIT 230 Assignment Portal | Alexander J. Annand | BYU-Idaho</title>
         <meta name="description" content="Assignment page for Alex Annand for CIT 230: Web Frontend Development at BYU-Idaho">
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/date.js"></script>
     </head>
     
-    <body>
+    <body onload="UpdateDates()">
         
         <header>
             <img src="images/me.jpg" width="200" height="273" alt="My Profile Picture">
@@ -35,13 +36,14 @@
                 <li>Lesson 09: <a href="lesson-9/index.html">Weather Home Page</a></li>
                 <li>Lesson 10: <a href="lesson-10/preston-10.html">Preston API Town Page</a></li>
                 <li>Lesson 11: <a href="lesson-11/index.html">Snapshot Weather Site</a></li>
+                <li>Lesson 12: <a href="lesson-12/index.html">CSS Preprocessor</a></li>
         </main>
         
         <footer>
-            <p>&copy;2019 &#9899; Alexander J. Annand &#9899; Arizona - USA &#9899; <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-            <p>Last Updated: 11/13/2019 21:22:20</p>
+            <p>&copy; <span id="copyrightdate"></span> &#9899; Alexander J. Annand &#9899; Arizona - USA &#9899; <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
+            Last Updated: <span id="date"></span></p>
         </footer>
         
   </body>
-    
+   
 </html>

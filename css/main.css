@@ -5,11 +5,12 @@ body {
     line-height: 32px;
     font-family: "Arial";
     color: #33334d;
+    background-color: #d4d4de;
 }
 
 h1 {
     font-size: 40px;
-    color: #c2c2d6;
+    color: #d4d4de;
 }
 
 h2 {
@@ -26,14 +27,19 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: #666699;
+    background-color: #090921;
     color: whitesmoke;
 }
 
 header img {
-    width: 210px;
-    height: 300px;
+    width: 275px;
+    height: 500px;
     float: right;
+    padding-top: 135px;
+}
+
+main {
+    border: 1px solid #090921;
 }
 
 footer {
