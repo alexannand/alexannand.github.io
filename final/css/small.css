@@ -1,0 +1,363 @@
+/* Header, Nav, and general CSS for all pages */
+
+body {
+    background-image: linear-gradient(to right, #979284, #c2bca9, #ede5ce, #c2bca9, #979284);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Francois One', sans-serif;
+}
+
+nav {
+	max-width: 100%;
+	background-color: #c2bca9;	
+}
+
+.currentpage {
+    background-color: #ede5ce;
+}
+
+.navbar {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.navbar li {
+	border: 1px solid #161617;
+    display: none;
+    flex: 6 6 1%;
+}
+
+.navbar li:first-child {
+    display: block;
+}
+
+.navbar a {
+	display: block;
+	color: #161617;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    font-family: 'Francois One', sans-serif;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #ede5ce;
+	background-color: #6c695e;
+}
+
+.dropdown li {
+    display: block;
+}
+
+header {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, #979284, #c2bca9, #ede5ce, #c2bca9, #979284);
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+}
+
+#company-motto {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 22px;
+    margin-bottom: 10px; 
+    text-shadow: 1px 1px 2px #ede5ce, 0 0 25px #c2bca9, 0 0 5px black;
+    color: #583d01;
+    text-align: center;
+}
+
+#company-name {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 40px;
+    margin-bottom: 10px; 
+    text-shadow: 1px 1px 2px #ede5ce, 0 0 25px #c2bca9, 0 0 5px black;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #583d01;
+    font-size: 40px;
+}
+
+main {
+    margin: 25px auto;
+    padding: 15px 0;
+}
+
+/* Home Page */
+
+#reserve-banner {
+    display: block;
+    width: 100%;
+    height: 70px; 
+    box-shadow: 0px 0px 30px white;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: #6c695e;
+}
+
+#reserve-banner-text {
+	color: #161617;
+	text-decoration: none;
+    font-family: 'Francois One', sans-serif;
+    font-size: 2em;
+}
+
+#reserve-banner a {
+	display: block;
+	color: #ede5ce;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    font-family: 'Francois One', sans-serif;
+    font-size: 2em;
+}
+
+#reserve-banner a:hover {
+    color: #161617;
+	background-color: #ede5ce;
+}
+
+#who-we-are {
+    font-size: 2.5em;
+    color: #161617;
+    text-shadow: 0px 0px 20px #161617;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.home-text {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #161617;
+}
+
+#home-temple-title {
+    font-size: 2em;
+    color: #161617;
+    text-shadow: 0px 0px 20px #161617;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#home-temple {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2bca9;
+}
+
+#home-temple-div {
+  width: 48%;
+  flex: 1 0 15em;
+}  
+
+/* Temple Information Page */
+
+.temple {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2bca9;
+}
+
+.temple-div {
+  width: 48%;
+  flex: 1 0 15em;
+} 
+
+.temple-text {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #161617;   
+}
+
+#gilbert-div, #seattle-temple, #oakland-temple, #houston-temple {
+    max-width: 100%;
+}
+
+#gilbert-temple, #seattle-temple, #oakland-temple, #houston-temple {
+    height: 300px;
+}
+
+/* Reservation Page */
+
+#reservation-header {
+    font-size: 2.5em;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #161617;
+    text-shadow: 0px 0px 20px #161617;
+}
+
+#reservation-form {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#reservation-box {
+    display: inline-block;
+    width: 524px;
+    height: 970px;
+    background-color: #6c695e;
+    border: 1px solid white;
+    color: #ede5ce;
+}
+
+.reservation {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #161617; 
+}
+
+/* Services Page */
+
+.services-title {
+    font-size: 1.5em;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #161617;
+    text-shadow: 0px 0px 20px #161617;
+}
+
+#div1, #div3 {
+    background-color: #c2bca9;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #161617; 
+}
+
+#div2, #div4 {
+    background-color: #979284;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #161617; 
+}
+
+
+/* Contact Page */
+
+#contact-header {
+    font-size: 2.5em;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #161617;
+    text-shadow: 0px 0px 20px #161617;
+}
+
+.contact {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #161617;
+}
+
+#contact-form {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#contact-box {
+    display: inline-block;
+    width: 451px;
+    height: 525px;
+    background-color: #6c695e;
+    border: 1px solid white;
+    color: #ede5ce;
+}
+
+.required {
+    color: #cc2d22;
+}
+
+#social-media {
+    display: block;
+    text-align: center;
+}
+
+.social-media {
+    width: 50px;
+    height: 50px;
+}
+
+.map {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#map {
+    display: inline;
+    box-shadow: 0px 0px 50px #161617;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+/* Thank You Page */
+
+.ty {
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0px 0px 20px #161617;
+}
+
+#ty {
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Footer for all pages */
+
+footer {
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    color: #161617;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #979284, #c2bca9, #ede5ce, #c2bca9, #979284);
+    border: 1px solid #6c695e;
+    padding: 20px;
+}

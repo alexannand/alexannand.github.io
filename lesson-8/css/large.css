@@ -30,7 +30,21 @@
 .header-name{
     font-size: 35px;
 }
+   
+#home-temple {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2bca9;
+}
     
+#home-temple-div {
+  width: 48%;
+  flex: 1 0 15em;
+}    
+
 .header-motto {
     font-size: 20px;
 }
@@ -39,14 +53,5 @@ footer{
     font-size: 18px;
 }   
     
-.table {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}
-
-.gallery-title {
-    font-size:24px;
-}
 
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../final/css/small.css">
+    <link rel="stylesheet" href="../lesson-11/css/medium.css">
+    <link rel="stylesheet" href="../lesson-11/css/large.css">
+    <link rel="shortcut icon" href="../final/images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Francois+One|Josefin+Slab&display=swap" rel="stylesheet">
+    <script src="../lesson-11/js/menu.js"></script>
+    <script src="../lesson-11/js/date.js"></script>
+    <script src="../lesson-11/js/lazyload.js" defer></script>
+    <title>Temple Information - Temple Inn & Suites</title>
+    <meta name="description" content="The temple information page for Temple Inn & Suites">
+</head>
+<body onload="UpdateDates()">
+  
+<header>
+        <img class="logo" src="../final/images/logo.png" alt="logo">
+<div id="header">
+     <h1 id="company-name">Temple Inn & Suites</h1>
+     <div id="company-motto">Convenience with a touch of Luxury</div>  
+</div>
+     
+</header> 
+    
+<nav>
+        <ul class="navbar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../final/index.html">Home</a></li>
+            <li class="currentpage"><a href="../final/information.html">Temple Information</a></li>
+            <li><a href="../final/reservations.html">Reservations</a></li>
+            <li><a href="../final/services.html">Services</a></li>
+            <li><a href="../final/contact.html">Contact Us</a></li>
+        </ul>  
+</nav>    
+    
+<main>
+    
+    <section class="temple">
+        <div clas="temple-div">
+        <h3 id="home-temple-title">The Gilbert Temple</h3>
+            <p class="temple-text">Address: 3301 S Greenfield Rd, Gilbert, AZ 85297 <br>
+            Telephone: 480-822-5000<br>
+            Email: gilbert.temple@lds.org<br>
+            Services: Clothing rental<br>
+            History: Announced 2008, Dedicated 2014<br>
+            Ordinance and Session Schedule: Every 45 minutes from 5:30am-7:45pm<br>
+            Temple Closure: December 24, 25, 31</p>
+        </div>
+        <div id="gilbert-div">
+        <img id="gilbert-temple" src="../final/images/gilberttemple.jpg" alt="Gilbert Temple">
+        </div>
+    </section>
+    
+    <section class="temple">
+        <div id="seattle-div">
+        <img id="seattle-temple" src="../final/images/seattletemple.jpg" alt="Seattle Temple">
+        </div>
+        <div class="temple-div">
+        <h3 id="home-temple-title">The Seattle Temple</h3>
+            <p class="temple-text">Address: 2808 148th Ave SE, Bellevue, WA 98007<br>
+            Telephone: 425-643-5144<br>
+            Email: seattle.temple@lds.org<br>
+            Services: Clothing rental, Cafeteria<br>
+            History: Announced 1975, Dedicated 1980<br>
+            Ordinance and Session Schedule: Every 30 minutes from 6:00am-7:30pm<br>
+            Temple Closure: December 24, 25, 31</p>
+        </div>
+        
+    </section>
+    
+    <section class="temple">
+        <div class="temple-div">
+        <h3 id="home-temple-title">The Oakland Temple</h3>
+            <p class="temple-text">Address: 4770 Lincoln Ave, Oakland, CA 94602<br>
+            Telephone: 510-531-3200<br>
+            Email: oakland.temple@lds.org<br>
+            Services: Clothing rental, Cafeteria<br>
+            History: Announced 1961, Dedicated 1964<br>
+            Ordinance and Session Schedule: Every 30 minutes from 5:30am-7:00pm<br>
+            Temple Closure: December 24, 25, 31</p>
+        </div>
+        <div id="oakland-div">
+        <img id="oakland-temple" src="../final/images/oaklandtemple.jpg" alt="Oakland Temple">
+        </div>
+    </section>
+    
+    <section class="temple">
+        <div id="houston-div">
+        <img id="houston-temple" src="../final/images/houstontemple.jpg" alt="Houston Temple">
+        </div>
+        <div class="temple-div">
+        <h3 id="home-temple-title">The Houston Temple</h3>
+            <p class="temple-text">Address: 15725 Champion Forest Dr, Spring, TX 77379<br>
+            Telephone: 281-376-6804<br>
+            Email: houston.temple@lds.org<br>
+            Services: Clothing rental<br>
+            History: Announced 1997, Dedicated 2000, Rededicated 2018<br>
+            Ordinance and Session Schedule: Every hour from 7:00am-7:00pm<br>
+            Temple Closure: December 24, 25, 31</p>
+        </div>
+        
+    </section>
+    
+</main>
+
+<footer>
+    <p>&copy; <span id="copyrightdate"></span> &#9899; Alexander J. Annand &#9899; Arizona - USA<br>
+    <span id="date"></span><br>
+    </p>  
+</footer>
+    
+</body>
+
+</html>

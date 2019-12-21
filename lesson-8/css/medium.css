@@ -9,10 +9,18 @@ footer {
     font-size: 15px;
 }
 
-.table {
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap:30px;
-    margin:0 0 30px 0 ;
-} 
+#home-temple {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2bca9;
+}
+    
+#home-temple-div {
+    width: 48%;
+    flex: 1 0 15em;
+}
     
 } 

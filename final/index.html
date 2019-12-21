@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../final/css/small.css">
+    <link rel="stylesheet" href="../lesson-11/css/medium.css">
+    <link rel="stylesheet" href="../lesson-11/css/large.css">
+    <link rel="shortcut icon" href="../final/images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Francois+One|Josefin+Slab&display=swap" rel="stylesheet">
+    <script src="../lesson-11/js/menu.js"></script>
+    <script src="../lesson-11/js/date.js"></script>
+    <script src="../lesson-11/js/lazyload.js" defer></script>
+    <title>Home - Temple Inn & Suites</title>
+    <meta name="description" content="The home page for Temple Inn & Suites">
+</head>
+<body onload="UpdateDates()">
+  
+<header>
+        <img class="logo" src="../final/images/logo.png" alt="logo">
+<div id="header">
+     <h1 id="company-name">Temple Inn & Suites</h1>
+     <div id="company-motto">Convenience with a touch of Luxury</div>  
+</div>
+     
+</header> 
+    
+<nav>
+        <ul class="navbar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="currentpage"><a href="../final/index.html">Home</a></li>
+            <li><a href="../final/information.html">Temple Information</a></li>
+            <li><a href="../final/reservations.html">Reservations</a></li>
+            <li><a href="../final/services.html">Services</a></li>
+            <li><a href="../final/contact.html">Contact Us</a></li>
+        </ul>  
+</nav>    
+    
+<main>
+    
+    <div id="reserve-banner">
+    <a href="../final/reservations.html" id="reserve-banner-text">Make your reservation here!</a>
+    </div>
+    
+    <h2 id="who-we-are">Who We Are</h2>
+    <p class="home-text">Temple Inn & Suites is your home away from home. We hope to provide memorable and sacred experiences as you travel to one of our four locations. Our newest addition is less than half a mile away from the Seattle Temple.</p><hr>
+    
+    <section id="home-temple">
+        <div id="home-temple-div">
+        <h3 id="home-temple-title">The Seattle Temple</h3>
+            <p class="home-text">The Seattle Temple is the 21st constructed and 19th operating temple of The Church of Jesus Christ of Latter-day Saints. The temple was announced on November 15, 1975 and was dedicated five years later on November 17, 1980. </p>
+        </div>
+        <div id="home-temple-pic-div">
+        <img id="home-temple-pic" src="../final/images/seattletemple.jpg" alt="Seattle Temple">
+        </div>
+    </section>
+    
+</main>
+
+<footer>
+    <p>&copy; <span id="copyrightdate"></span> &#9899; Alexander J. Annand &#9899; Arizona - USA<br>
+    <span id="date"></span><br>
+    </p>  
+</footer>
+    
+</body>
+
+</html>

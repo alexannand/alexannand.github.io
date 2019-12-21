@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../final/css/small.css">
+    <link rel="stylesheet" href="../lesson-11/css/medium.css">
+    <link rel="stylesheet" href="../lesson-11/css/large.css">
+    <link rel="shortcut icon" href="../final/images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Francois+One|Josefin+Slab&display=swap" rel="stylesheet">
+    <script src="../lesson-11/js/menu.js"></script>
+    <script src="../lesson-11/js/date.js"></script>
+    <script src="../lesson-11/js/lazyload.js" defer></script>
+    <title>Home - Temple Inn & Suites</title>
+    <meta name="description" content="The home page for Temple Inn & Suites">
+</head>
+<body onload="UpdateDates()">
+  
+<header>
+        <img class="logo" src="../final/images/logo.png" alt="logo">
+<div id="header">
+     <h1 id="company-name">Temple Inn & Suites</h1>
+     <div id="company-motto">Convenience with a touch of Luxury</div>  
+</div>
+     
+</header> 
+    
+<nav>
+        <ul class="navbar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../final/index.html">Home</a></li>
+            <li><a href="../final/information.html">Temple Information</a></li>
+            <li class="currentpage"><a href="../final/reservations.html">Reservations</a></li>
+            <li><a href="../final/services.html">Services</a></li>
+            <li><a href="../final/contact.html">Contact Us</a></li>
+        </ul>  
+</nav>    
+    
+<main>
+    
+    <h1 id="reservation-header">Reservations</h1>
+    
+    <p class="reservation">Reserving a luxurious suite at Temple Inn & Suites guarantees you a memorable experience. Please fill out the form below to create your reservation. We understand that things come up from time to time and allow 24 hour cancellations by contacing us during our regular business hours. Our contact information can be found <a href="../final/contact.html">here</a>.</p>
+    
+    <div id="reservation-form">
+    <div id="reservation-box">
+    <form action="reservationthanks.html" method="get">  
+    <section>
+    <h2>Contact Information</h2>
+    <label class="required">Full Name *<br><input type="text" name="full name" pattern="[A-Za-z]{5,}" autocomplete="off" required></label><br><hr>
+    <label>E-Mail<br><input type="email" name="email" placeholder=" email@email.com" autocomplete="off"></label><br><hr>
+    <label class="required">Phone Number *<br><input type="tel" name="telephone" autocomplete="off" pattern="[0-9]+" required></label><br><hr>
+    <label class="required">Home State *<br><input type="text" name="home state" pattern="[A-Za-z]" autocomplete="off" required></label><br><hr>
+    
+    </section>
+        
+    <br>
+    <section>
+    <h2>Reservation Information</h2>
+    <label>Destination<br><input list="hotel">
+    <datalist id="hotel">
+      <option value="Gilbert Temple">
+      <option value="Seattle Temple">
+      <option value="Oakland Temple">
+      <option value="Houston Temple">
+    
+    </datalist></label><br><hr>
+    <label class="required">Arrival Date *<br><input type="date" name="arrival date" autocomplete="off" required></label><br><hr>
+    <label class="required">Departure Date *<br><input type="date" name="departure date" autocomplete="off" required></label><br><hr>
+    <label class="required">Number of Rooms *<br><input type="number" name="number of rooms" autocomplete="off" required></label><br><hr>
+    <label class="required">Type of Room *<br><input list="type of room" required>
+    <datalist id="room">
+      <option value="Single Queen Suite">
+      <option value="Double Queen Suite">
+      <option value="Single King Suite">
+      <option value="Double King Suite">
+      <option value="Full-time Missionary Suite">
+    </datalist></label><br><hr>
+    <span class="required">* Required Field</span>
+    </section>
+        
+    <br>
+    <section>
+    <h2>Additional Information</h2>
+    <label><textarea rows="6" cols="70" placeholder="Please include any special accommodations or comments here..."></textarea></label><br>
+    </section>
+    <br><input type="submit" value="Submit Reservation"><br><br>
+    </form>
+    </div>
+    </div>
+    
+</main>
+
+<footer>
+    <p>&copy; <span id="copyrightdate"></span> &#9899; Alexander J. Annand &#9899; Arizona - USA<br>
+    <span id="date"></span><br>
+    </p>  
+</footer>
+    
+</body>
+
+</html>
